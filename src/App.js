@@ -166,16 +166,19 @@ class App extends React.Component {
           </h1>
           {time === 0 && < h2>Please Enter Your Date of Birth to Begin</h2>}
           {time === 0 && <div className="options">
+            <p>Day</p>
             <Select style={{ margin: "10px" }} width={80} onChange={event => this.setState({ day: event.target.value })} disabled={loading}>
               {dayOptions.map((a, i) => {
                 return <option key={i}>{a}</option>
               })}
             </Select>
+            <p>Month</p>
             <Select style={{ margin: "10px" }} width={80} onChange={event => this.setState({ month: event.target.value })} disabled={loading}>
               {monthOptions.map((a, i) => {
                 return <option key={i}>{a}</option>
               })}
             </Select>
+            <p>Year</p>
             <Select style={{ margin: "10px" }} width={80} onChange={event => this.setState({ year: event.target.value })} disabled={loading}>
               {yearOptions.map((a, i) => {
                 return <option key={i}>{a}</option>

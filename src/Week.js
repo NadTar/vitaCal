@@ -76,7 +76,7 @@ class Week extends React.Component {
                     transform: "scale(0.1)",
                     width: "230px", 
                     height: "230px",
-                    cursor: "pointer",
+                    cursor: "",
                      zIndex: isHovering ? '1' : '0'}}  
             onMouseEnter={e => {
                 this.handleMouseHover()
